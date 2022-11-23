@@ -1,0 +1,9 @@
+name: Run on custom
+
+on: push 
+
+jobs:
+  init:
+    runs-on: self-hosted
+    steps:
+      - run: echo $HOSTNAME
